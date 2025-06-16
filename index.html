@@ -87,108 +87,6 @@
 
   <h1>🚗 Bikes & Cars Info 🏍️</h1> 
 <input type="text" placeholder="Search Bike or Car ..." style="width: 300px;padding: 8px; font: size 20px;margin: 10px auto ;display: block;">
-<div id="filter-buttons">
-  <button onclick="filterVehicales('all')">All</button>
-  <button onclick="filterVehicales('bikes')">Bikes</button>
-  <button onclick="filterVehicales('cars')">Cars</button>
-</div>
-
-<div class="vehical bikes">
-  <h3>KTM Duke 390</h3>
-  <img src="images/Duke 390.jpg" alt="KTM Duke 390" width="300" height="200">
-</div>
-
-<div class="vehical cars">
-  <h3>Tata Nexon EV</h3>
-  <img src="images/Nexon EV.jpg" alt="Tata Nexon EV" width="300" height="200">
-</div>
-
-<div class="vehical bikes">
-  <h3>Royal Enfield HUNTER 350</h3>
-  <img src="images/hunter 350.jpg" alt="Royal Enfield HUNTER 350" width="300" height="200">
-</div>
-<div class="vehical cars">
-  <h3>Maruti Suzuki Swift</h3>
-  <img src="images/Swift.jpg" alt="Maruti Suzuki Swift" width="300" height="200">
-</div>
-<div class="vehical bikes">
-  <h3>Honda CB350</h3>
-  <img src="images/Honda CB350.jpg" alt="Honda CB350" width="300" height="200">
-</div>
-<div class="vehical bikes">
-  <h3>TVS Apache RTR 200 4V</h3>
-  <img src="images/2025-apache-rtr-200-4v6846e0c4ea756.jpg" alt="TVS Apache RTR 200 4V" width="300" height="200">
-</div>
-<div class="vehical bikes">
-  <h3>Yamaha MT-15</h3>
-  <img src="images/MT15.jpg" alt="Yamaha MT-15" width="300" height="200">
-</div>
-<div class="vehical bikes">
-  <h3>Bajaj Pulsar n150</h3>
-  <img src="images/N150.jpg" alt="Bajaj Pulsar n150" width="300" height="200">
-</div>
-<div class="vehical cars">
-  <h3>Mahindra Thar</h3>
-  <img src="images/Thar.jpg" alt="Mahindra Thar" width="300" height="200">
-</div>
-<div class="vehical cars">
-  <h3>Tata Nexon EV</h3>
-  <img src="images/Nexon EV.jpg" alt="Tata Nexon EV" width="300" height="200">
-</div>
-<style>
-#filter-buttons {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#filter-buttons button {
-  padding:10px 20px;
-  margin:5px;
-  cursor:pointer;
-  background-color:#444;
-  color: #a66767;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-#filter-buttons button:hover {
-  background-color: #222;
-}
-
-.vehical {
-  display: inner-block;
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  background: #834e4e;
-}
-</style>
-
-<script>
-  function filterVehicales(type) {
-    const vehicales = document.querySelectorAll('.vehical');
-    vehicales.forEach(vehical => {
-      if (type === 'all' || vehical.classList.contains(type)) {
-        vehical.style.display = 'block';
-      } else {
-        vehical.style.display = 'none';
-      }
-    });
-  }
-</script>
-<div>
-  <h2>🚗 Featured Bikes & Cars</h2>
-  <p>Explore the latest and most popular bikes and cars in the market.</p>
-
-</div>
-
-<div class="bike-section">
-  <h2>🏍️ Latest Bikes</h2>
-  <p>Discover the latest bikes with detailed specifications and reviews.</p>
-</div>
 
 
 <section class="bike-section">
@@ -253,7 +151,7 @@
     border-radius: 10px;
     width: 80%;
     max-width: 500px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
   }
   </style>
 
