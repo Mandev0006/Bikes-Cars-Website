@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikes & Cars Info</title>
+  <style>
+    body {
+  background: linear-gradient(to right, #aab6b9, #999b9e);
+}
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+    body {
+      background-color: rgb(253, 253, 253);
+      font-family: "Times New Roman", Times, serif;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    h2 {
+      color: #555;
+    }
+    img {
+      border-radius: 10px;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<navclass="navbar">
+  <ul>
+   <li><a href="#">🏠Home</a></li>
+  <li><a href="#">🚗Cars</a></li>
+  <li><a href="#">🏍️Bikes</a></li>
+  <li><a href="#">📞Contact Us</a></li>
+  </ul>  
+</nav>
+<nav>
+  <nav class="navbar">
+  <div class="logo">🏍️ BikeInfo</div>
+  <ul class="nav-links">
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">Popular</a></li>
+    <li><a href="#">Electric</a></li>
+    <li><a href="#">Upcoming</a></li>
+  </ul>
+  <input type="text" class="search-box" placeholder="Search Bike..." />
+</nav>
+<div class="bike-list">
+  <div class="bike-card">Royal Enfield Hunter 350</div>
+  <div class="bike-card">KTM Duke 390</div>
+  <div class="bike-card">Honda CB350</div>
+  <div class="bike-card">TVS Apache RTR 200 4V</div>
+  <div class="bike-card">Yamaha MT-15</div>
+  <div class="bike-card">Bajaj Pulsar n150</div>
+  <div class="bike-card">Mahindra Thar</div>
+  <div class="bike-card">Tata Nexon EV</div>
+  <div class="bike-card">Maruti Suzuki Swift</div>
+</div>
+<script>
+  const searchbox = document.querySelector(".search-box");
+  const bikeCards = document.querySelectorAll('.bike-card');
+  searchbox.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    bikeCards.forEach(card => {
+      const bikeName = card.textContent.toLowerCase();
+      if (bikeName.includes(searchTerm)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+<style>
+  .search-box{
+    padding: 8px 12px;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid #ccc ;
+  border-radius: 8px;
+  font-size: 16px;
+  }
+</style>
+</nav>
+<style> 
+  .navbar {
+    background-color: #333;
+    padding: 10px 0;
+
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+   margin: 0 20px;
+  }
+  .navbar a {
+    color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  }
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+</style>
+</nav>
+
+  <h1>🚗 Bikes & Cars Info 🏍️</h1> 
+<input type="text" placeholder="Search Bike or Car ..." style="width: 300px;padding: 8px; font: size 20px;margin: 10px auto ;display: block;">
+
+<div id="filter-buttons">
+  <button onclick="filterVehicales('all')">All</button>
+  <button onclick="filterVehicales('bikes')">Bikes</button>
+  <button onclick="filterVehicales('cars')">Cars</button>
+</div>
+
+<div class="vehical bikes">
+  <div class="images-section">
+  <h3>KTM Duke 390</h3>
+  <img src="images/Duke 390.jpg" alt="KTM Duke 390" width="300" height="200">
+</div>
+
+
+  <div class="info">
+    <p><strong>Engine:</strong> 373cc</p>
+    <p><strong>Top Speed:</strong> 167 km/h</p>
+    <p><strong>Price:</strong> ₹2.97 Lakh</p>
+    <p><strong>Mileage:</strong> 30 km/l</p>
+    <p><strong>Description:</strong> KTM Duke 390 is a powerful street bike with aggressive design and premium features.</p>
+  </div>
+</div>
+
+<style>
+  .vehical {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #7d4545;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.images-section img {
+  border-radius: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
+.info {
+  flex: 10;
+  padding: 50px;
+}
+
+</style>
+<div class="vehical cars">
+  <div class="images-section">
+  <h3>Tata Nexon EV</h3>
+  <img src="images/Nexon EV.jpg" alt="Tata Nexon EV" width="300" height="200">
+</div>
+
+
+<div class="info">
+  <p><strong>Engine:</strong> Electric</p>
+  <p><strong>Top Speed:</strong> 120 km/h</p>
+  <p><strong>Price:</strong> ₹14.5 Lakh</p>
+  <p><strong>Mileage:</strong> 312 km/charge</p>
+  <p><strong>Description:</strong> Tata Nexon EV is a compact electric SUV with modern features and impressive range.</p>
+
+
+
+<div class="vehical bikes">
+  <div class="images-section">
+  <h3>Royal Enfield HUNTER 350</h3>
+  <img src="images/hunter 350.jpg" alt="Royal Enfield HUNTER 350" width="300" height="200">
+</div>
+
+<div>
+<div class="info">
+  <p><strong>Engine:</strong> 249cc</p>
+  <p><strong>Top Speed:</strong> 120 km/h</p>
+  <p><strong>Price:</strong> ₹1.5 Lakh</p>
+  <p><strong>Mileage:</strong> 36 km/l</p>
+  <p><strong>Description:</strong> Royal Enfield HUNTER 350 is a classic cruiser with retro styling and modern performance.</p>
+</div>
+<style>
+  .vehical {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #7d4545;
+  padding: 40px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.images-section img {
+  border-radius: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
+.info {
+  flex: 10;
+  padding: 50px;
+}
+</style>
+
+<div class="vehical cars">
+  <h3>Maruti Suzuki Swift</h3>
+  <img src="images/Swift.jpg" alt="Maruti Suzuki Swift" width="300" height="200">
+</div>
+<div class="vehical bikes">
+  <h3>Honda CB350</h3>
+  <img src="images/Honda CB350.jpg" alt="Honda CB350" width="300" height="200">
+</div>
+<div class="vehical bikes">
+  <h3>TVS Apache RTR 200 4V</h3>
+  <img src="images/2025-apache-rtr-200-4v6846e0c4ea756.jpg" alt="TVS Apache RTR 200 4V" width="300" height="200">
+</div>
+<div class="vehical bikes">
+  <h3>Yamaha MT-15</h3>
+  <img src="images/MT15.jpg" alt="Yamaha MT-15" width="300" height="200">
+</div>
+<div class="vehical bikes">
+  <h3>Bajaj Pulsar n150</h3>
+  <img src="images/N150.jpg" alt="Bajaj Pulsar n150" width="300" height="200">
+</div>
+<div class="vehical cars">
+  <h3>Mahindra Thar</h3>
+  <img src="images/Thar.jpg" alt="Mahindra Thar" width="300" height="200">
+</div>
+<div class="vehical cars">
+  <h3>Tata Nexon EV</h3>
+  <img src="images/Nexon EV.jpg" alt="Tata Nexon EV" width="300" height="200">
+</div>
+<style>
+#filter-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#filter-buttons button {
+  padding:10px 20px;
+  margin:5px;
+  cursor:pointer;
+  background-color:#444;
+  color: #a66767;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+#filter-buttons button:hover {
+  background-color: #222;
+}
+
+.vehical {
+  display: inner-block;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background: #834e4e;
+}
+</style>
+
+<script>
+  function filterVehicales(type) {
+    const vehicales = document.querySelectorAll('.vehical');
+    vehicales.forEach(vehical => {
+      if (type === 'all' || vehical.classList.contains(type)) {
+        vehical.style.display = 'block';
+      } else {
+        vehical.style.display = 'none';
+      }
+    });
+  }
+</script>
+<div>
+  <h2>🚗 Featured Bikes & Cars</h2>
+  <p>Explore the latest and most popular bikes and cars in the market.</p>
+
+</div>
+
+<div class="bike-section">
+  <h2>🏍️ Latest Bikes</h2>
+  <p>Discover the latest bikes with detailed specifications and reviews.</p>
+</div>
+
+
+
+
+<section class="bike-section">
+  <div class="bike-card">
+    <img src="images/Duke 1.jpg" alt="KTM Duke 390" width="800" height="500">
+    <h3>KTM Duke 390</h3>
+    <p>Price: ₹3.2 Lakh</p>
+    <button>Check Details</button>
+    <style>
+      .bike-section {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #424b54;
+}
+    </style>
+  </div>
+  <div class="card">
+  <style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+  <h2>KTM Duke 390</h2>
+
+  <img src="Duke 390.jpg" alt="KTM Duke 390" width="300" height="200">
+  <p>Engine: 373cc | Mileage: 25 kmpl |</p>
+  <h2> Watch Bike Review </h2>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/Q3S3DlglRCk?si=t-5w9NfQUCw5rKGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  frameborder ="0" allowfullscreen></iframe>
+  </div>
+<div class="gallery">
+  <div class="right-side"></div>
+    <!-- Your right side content: title, image, details, video -->
+  </div>
+
+  <div class="gallery">
+    <img src="images/Duke 1.jpg" alt="Duke 1" width="300" height="200">
+    <img src="images/Duke2.jpg" alt="Duke 2" width="300" height="200">
+    <img src="images/Duke 3.jpg" alt="Duke 3" width="300" height="200">
+    <img src="images/Duke 4.jpg" alt="Duke 4" width="300" height="200">
+  </div>
+</div>
+
+
+
+</div>
+
+  <style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card">
+<h2>Royal Enfield HUNTER 350</h2>
+  <img src="images/hunter 350.jpg" alt="Royal Enfield HUNTER 350" width="300" height="200">
+  <p>Engine: 350cc | Mileage: 36 kmpl | Price: ₹1.5 Lakh</p>
+  <h2> Watch Bike Review </h2>
+  <iframe Width="350" height="200" src="https://www.youtube.com/embed/HPNnVwPqJgo?si=MqG4-zvAI0EBlXW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  frameborder="0"allowfullscreen></iframe>
+</div>
+  <style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+ 
+ <div class="card">
+    <h2>Honda CB350</h2>
+    <img src="images/Honda CB350.jpg" alt="Honda CB350" width="300" height="200">
+    <p>Engine: 348cc | Mileage: 35 kmpl | Price: ₹1.8 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+ 
+ <div class="card">
+    <h2>TVS Apache RTR 200 4V</h2>
+    <img src="images/2025-apache-rtr-200-4v6846e0c4ea756.jpg" alt="TVS Apache RTR 200 4V" width="300" height="200">
+<p>Engine: 249cc | Mileage:36 kmpl | Price: ₹1.49 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card">
+    <h2>Yamaha MT-15</h2>
+    <img src="images/MT15.jpg" alt="Yamaha MT-15" width="300" height="200">
+    <p>Engine: 155cc | Mileage: 45 kmpl | Price: ₹1.6 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card"> 
+    <h2>Bajaj Pulsar n150</h2>
+    <img src="images/N150.jpg" alt="Bajaj Pulsar n150" width="300" height="200">
+    <p>Engine: 149.68cc | Mileage: 50 kmpl | Price: ₹1.3 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card ">
+  <h2>Mahindra Thar</h2>
+  <img src="images/Thar.jpg" alt="Mahindra Thar" width="350" height="200">
+  <p>Engine: 2.0L Petrol | Mileage: 13 kmpl | Price: ₹15 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card">
+  <h2>Tata Nexon EV</h2>
+    <img src="images/Nexon EV.jpg" alt="Tata Nexon EV" width="350" height="200">
+    <p>Engine: Electric | Mileage: 312 km/charge | Price: ₹14.5 Lakh</p>
+</div>
+<style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+
+<div class="card">
+    <h2>Maruti Suzuki Swift</h2>
+    <img src="images/Swift.jpg" alt="Maruti Suzuki Swift" width="350" height="200">
+    <p>Engine: 1.2L Petrol | Mileage: 23 kmpl | Price: ₹6.5 Lakh</p>
+</div>
+<h2> 🔍Compare Bikes</h2>
+
+
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Engine</th>
+    <th>Mileage</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>KTM Duke 390</td>
+    <td>373cc</td>
+    <td>25 kmpl</td>
+    <td>₹3.2 Lakh</td>
+  </tr>
+  <tr>
+    <td>Royal Enfield HUNTER 350</td>
+    <td>249cc</td>
+    <td>36 kmpl</td>
+    <td>₹1.5 Lakh</td>
+  </tr>
+  <tr>
+    <td>Honda CB350</td>
+    <td>348cc</td>
+    <td>35 kmpl</td>
+    <td>₹1.8 Lakh</td>
+  </tr>
+  <tr>
+    <td>TVS Apache RTR 200 4V</td>
+    <td>249cc</td>
+    <td>36 kmpl</td>
+    <td>₹1.49 Lakh</td>
+  </tr>
+  <tr>
+    <td>Yamaha MT-15</td>
+    <td>155cc</td>
+    <td>45 kmpl</td>
+    <td>₹1.6 Lakh</td>
+  </tr>
+  <tr>
+    <td>Bajaj Pulsar n150</td>
+    <td>149.68cc</td>
+    <td>50 kmpl</td>
+    <td>₹1.3 Lakh</td>
+  </tr>
+  <tr>
+    <td>Mahindra Thar</td>
+    <td>2.0L Petrol</td>
+    <td>13 kmpl</td>
+    <td>₹15 Lakh</td>
+  </tr>
+  <tr>
+    <td>Tata Nexon EV</td>
+    <td>Electric</td>
+    <td>312 km/charge</td>
+    <td>₹14.5 Lakh</td>
+  </tr>
+  <tr>
+    <td>Maruti Suzuki Swift</td>
+    <td>1.2L Petrol</td>
+    <td>23 kmpl</td>
+    <td>₹6.5 Lakh</td>
+  </tr>
+</table>
+
+
+  <style> 
+  .card {
+    background-color: #ffb98d;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  </style>
+  <style>
+    body {
+      background-color: rgb(253, 253, 253);
+      font-family: "Times New Roman", Times, serif;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+  </style>
+ <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car and Bike Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+  <h1>Welcome to Car and Bike Info</h1>
+  <p>This website contains info about various bikes and cars.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<h2>📞 Contact Us </h2>
+
+<p>For more information, please contact us at: 9149693109</p>
+  <p>Follow us on social media 📱 :</p>
+  <ul>
+    <li><a href="https://www.instagram.com/@mandevrajput_06">Instagram</a></li>
+  </ul>
+
+</scriptjs>
+<script>
+  const toggleButton = document.getElementById('toggle-dark-mode');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+  });
+</script>
+<style>
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#toggle-dark-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: rgb(245, 11, 11);
+  cursor: pointer;
+  z-index: 999;
+}
+</style>
+</body>
+</html>
