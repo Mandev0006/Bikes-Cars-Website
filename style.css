@@ -1,14 +1,17 @@
 body {
-  background: linear-gradient(to right, #aab6b9, #999b9e);
+  background: linear-gradient(to right, #B0A89F, #92A378);
   background-color: rgb(253, 253, 253);
   font-family: "Times New Roman", Times, serif;
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+a{
+  text-decoration: none;
+}
 
 .navbar {
   background-color: #333;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 h1 {
@@ -82,7 +85,7 @@ p {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
-  background: #834e4e;
+  background: #787A84;
 }
 
 .vehical img {
@@ -139,5 +142,4 @@ p {
     max-width: 500px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
-  
   
