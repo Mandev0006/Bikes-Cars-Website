@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <mebody>
+  <ta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikes & Cars Info</title>
   <link rel="stylesheet" href="style.css">
 
@@ -16,8 +17,9 @@
   <script>
   setTimeout(function () {
     document.getElementById("loader").style.display = "none";
-  }, 2000); // 2000ms = 2 seconds
+  }, 4000); // 4000ms = 4 seconds
 </script>
+
 
 
   <div id="main-content" style="display:none;">
@@ -66,35 +68,51 @@
 
 </style>
 
+
 <navclass="navbar">
-  <ul>
    <li><a href="#">🏠Home</a></li>
   <li><a href="#">🚗Cars</a></li>
   <li><a href="#">🏍️Bikes</a></li>
   <li><a href="#">📞Contact Us</a></li>
-  </ul>  
 </nav>
 <nav>
   <nav class="navbar">
-  <div class="logo">🏍️ BikeInfo</div>
+  <div class="Bike">🏍️ BikeInfo</div>
   <ul class="nav-links">
     <li><a href="#">Trending</a></li>
     <li><a href="#">Popular</a></li>
     <li><a href="#">Electric</a></li>
     <li><a href="#">Upcoming</a></li>
   </ul>
-  <input type="text" class="search-box" placeholder="Search Bike..." />
+ 
 </nav>
+<style>
+.nav-links{
+  text-decoration: underline;
+  color: cyan;
+  font-size: 20px;
+}
+.navbar{
+  background-color: #353535;
+  padding: 20px;
+}
+.Bike{
+  color: bisque;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+</style>
 
 </nav>
 <section class="hero">
-  <h1>Find Your Dream Ride</h1>
+  <h1 style="color: #111;font-size: 1000;">Find Your Dream Ride</h1>
   
 </section>
 
 </nav>
 
-  <h1>🚗 Bikes & Cars Info 🏍️</h1> 
+  <h1 style="color: #111;">🚗 Bikes & Cars Info 🏍️</h1> 
 <input type="text" placeholder="Search Bike or Car ..." style="width: 300px;padding: 8px; font: size 20px;margin: 10px auto ;display: block;">
  <div id="filter-buttons">
     <button onclick="filterVehicales('all')">All</button>
@@ -160,7 +178,11 @@
       <h3>Hyundai i20</h3>
       <img src="https://img.autocarindia.com/Reviews/_Hyundai%20i20%20N%20Line%20MT%20Web.%20Resized%20and%20Watermarked._001.jpeg?c=0" alt="Hyundai i20" width="300" height="200">
 </div>
-
+<style>
+  .vehical cars{
+    background-color: aliceblue;
+  }
+</style>
 
 
   <h1>KTM Duke 390</h1>
@@ -649,6 +671,7 @@
 <h2> Watch Bike Review </h2>
 <iframe width="350" height="200" src="https://www.youtube.com/embed/RuXTOXEjYME?si=VFUtX3O3ucJVWOQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
 <div class="gallery">
   <div class="right-side"></div>
     <!-- Your right side content: title, image, details, video -->
@@ -662,86 +685,7 @@
   </div>
 </div>
 
-<h1> 🔍Compare Bikes</h1>
 
-
-<table>
-  <tr>
-    <th>Model</th>
-    <th>Engine</th>
-    <th>Mileage</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td>KTM Duke 390</td>
-    <td>373cc</td>
-    <td>25 kmpl</td>
-    <td>₹3.2 Lakh</td>
-  </tr>
-  <tr>
-    <td>Royal Enfield HUNTER 350</td>
-    <td>249cc</td>
-    <td>36 kmpl</td>
-    <td>₹1.5 Lakh</td>
-  </tr>
-  <tr>
-    <td>Honda CB350</td>
-    <td>348cc</td>
-    <td>35 kmpl</td>
-    <td>₹1.8 Lakh</td>
-  </tr>
-  <tr>
-    <td>TVS Apache RTR 200 4V</td>
-    <td>249cc</td>
-    <td>36 kmpl</td>
-    <td>₹1.49 Lakh</td>
-  </tr>
-  
-  <tr>
-    <td>Bajaj Pulsar n150</td>
-    <td>149.68cc</td>
-    <td>50 kmpl</td>
-    <td>₹1.3 Lakh</td>
-  </tr>
-  <tr>
-    <td>Mahindra Thar</td>
-    <td>2.0L Petrol</td>
-    <td>13 kmpl</td>
-    <td>₹15 Lakh</td>
-  </tr>
-  <tr>
-    <td>Hyundai Exter</td>
-    <td>1.2L Petrol</td>
-    <td>19.4 kmpl</td>
-    <td>₹7 Lakh Onwards</td>
-  <tr>
-    <td>Maruti Suzuki Swift</td>
-    <td>1.2L Petrol</td>
-    <td>23 kmpl</td>
-    <td>₹6.5 Lakh</td>
-  </tr>
-</table>
-
-
-  <style> 
-  .card {
-    background-color: #ffb98d;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 0 10px rgba(80, 218, 216, 0.1);
-  }
-  </style>
-  <style>
-    body {
-      background-color: rgba(156, 204, 121, 0.685);
-      font-family: "Times New Roman", Times, serif;
-      color: rgb(0, 0, 0);
-      font-size: 20px;
-    }
-  </style>
  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
 
 <h2>📞 Contact Us </h2>
@@ -752,7 +696,5 @@
   <a href="https://www.instagram.com/mandevrajput_06/">Instagram</a>
   </ul>
 
-</script>
-
 </body>
-</html>
+</html> 
